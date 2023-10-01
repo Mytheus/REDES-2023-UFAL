@@ -35,6 +35,7 @@ Estado do tabuleiro:
 | 0 |  |  |  |
 | 1 |  |  |  |
 | 2 |  |  |  |
+
 Sua vez!
 Digite a ação:
 
@@ -47,6 +48,7 @@ Estado do tabuleiro:
 | 0 |  |  |  |
 | 1 |  | X |  |
 | 2 |  |  |  |
+
 Vez do oponente...
 
 Ao receber a jogada de seu oponente, o Jogador 2 receberá o tabuleiro atualizado e estará livre para realizar seu lance:
@@ -59,6 +61,7 @@ Estado do tabuleiro:
 | 0 |  |  |  |
 | 1 |  | X |  |
 | 2 |  |  |  |
+
 Sua vez!
 Digite a ação:
 
@@ -70,4 +73,5 @@ Estado do tabuleiro:
 | 0 | X | O |  |
 | 1 |  | X | O |
 | 2 |  |  | X |
+
 Você Venceu!
