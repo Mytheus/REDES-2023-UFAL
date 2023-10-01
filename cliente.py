@@ -13,7 +13,7 @@ serverPort = 12000
 toconec = (serverAddress, serverPort)
 
 
-def printTabuleiro():
+def printTabuleiro(matrizmatriz):
     print("Estado do tabuleiro:")
     print("   0      1      2")
     count=0
@@ -46,13 +46,22 @@ matriz = [[" ", " ", " "],
         [" ", " ", " "],
         [" ", " ", " "]]
 
+def preencheVazio(tabuleiro, symbol):
+    if symbol == "X":
+        symbol = "O"
+    else:
+        symbol = "X"
+    for i in range(len(tabuleiro)):
+        for u in range(len(tabuleiro[i])):
+            if tabuleiro[i][u]==" ":
+                tabuleiro[i][u]=symbol
 
 
 clientSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 clientSocket.connect(toconec)
 print("AGUARDANDO OPONENTE...")
     
-msg = clientSocket.recv(1024).decode()
+msg = clientSocket.recv(2048).decode()
 if msg[0]=="1":
     if msg[1] == "1":
         print("Jogo encontrado! Você é o X!")
@@ -63,34 +72,31 @@ if msg[0]=="1":
 
 
 while True:
-    msg = int(clientSocket.recv(1024).decode())
+    msg = int(clientSocket.recv(2048).decode())
     
     if msg == WIN:
-        comando = clientSocket.recv(1024).decode()
-        alteraTabuleiro(comando)
-        printTabuleiro()
+        printTabuleiro(matriz)
         print("Você venceu!")
         break
         
     elif msg == EMP:
-        comando = clientSocket.recv(1024).decode()
-        alteraTabuleiro(comando)
-        printTabuleiro()
+        preencheVazio(matriz, symbol)
+        printTabuleiro(matriz)
         print("Deu velha!")
         break
         
     elif msg == LOSE:
-        comando = clientSocket.recv(1024).decode()
+        comando = clientSocket.recv(2048).decode()
         alteraTabuleiro(comando)
-        printTabuleiro()
+        printTabuleiro(matriz)
         print("Você perdeu!")
         break
     
     else:
         if msg == YT:
-            comando = clientSocket.recv(1024).decode()
+            comando = clientSocket.recv(2048).decode()
             alteraTabuleiro(comando)
-        printTabuleiro()
+        printTabuleiro(matriz)
         print("Sua vez!")
         while True:
             comando = input("Digite a ação: ")
@@ -101,5 +107,5 @@ while True:
             if alteraTabuleiro(comando):
                 clientSocket.send(comando.encode())
                 break
-        printTabuleiro()
+        printTabuleiro(matriz)
         print("Vez do oponente...")
