@@ -28,7 +28,9 @@ Ao encontrar a conexão, o jogo será iniciado. O primeiro cliente a conectar-se
 O Jogador 1 sempre iniciará jogando, então em sua tela aparecerá o tabuleiro no estado inicial (vazio) seguido das coordenadas em que as "peças" poderão ser colocadas. 
 
 AGUARDANDO OPONENTE...
+
 Jogo encontrado! Você é o X!
+
 Estado do tabuleiro:
 |   | 0 | 1 | 2 |
 |---|---|---|---|
@@ -42,6 +44,7 @@ Digite a ação:
 O servidor e o Jogador 2 aguardarão a resposta do cliente sobre qual jogada ele irá fazer, e após o Jogador 1 digitar sua jogada, o tabuleiro atualizará de acordo com ela, e a mesma será enviada ao servidor, que a repassará para o Jogador 2.
 
 Digite a ação: 11
+
 Estado do tabuleiro:
 |   | 0 | 1 | 2 |
 |---|---|---|---|
@@ -54,8 +57,11 @@ Vez do oponente...
 Ao receber a jogada de seu oponente, o Jogador 2 receberá o tabuleiro atualizado e estará livre para realizar seu lance:
 
 AGUARDANDO OPONENTE...
+
 Jogo encontrado!
+
 Você é o O!
+
 Estado do tabuleiro:
 |   | 0 | 1 | 2 |
 |---|---|---|---|
