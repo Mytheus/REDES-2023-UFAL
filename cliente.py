@@ -8,7 +8,7 @@ EMP = 3
 
 symbol = ""
 
-serverAddress = "192.168.0.22"
+serverAddress = "localhost"
 serverPort = 12000
 toconec = (serverAddress, serverPort)
 
