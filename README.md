@@ -29,7 +29,9 @@ O Jogador 1 sempre iniciará jogando, então em sua tela aparecerá o tabuleiro 
 
 AGUARDANDO OPONENTE...
 
-Jogo encontrado! Você é o X!
+Jogo encontrado! 
+
+Você é o X!
 
 Estado do tabuleiro:
 |   | 0 | 1 | 2 |
@@ -39,6 +41,7 @@ Estado do tabuleiro:
 | 2 |  |  |  |
 
 Sua vez!
+
 Digite a ação:
 
 O servidor e o Jogador 2 aguardarão a resposta do cliente sobre qual jogada ele irá fazer, e após o Jogador 1 digitar sua jogada, o tabuleiro atualizará de acordo com ela, e a mesma será enviada ao servidor, que a repassará para o Jogador 2.
@@ -70,6 +73,7 @@ Estado do tabuleiro:
 | 2 |  |  |  |
 
 Sua vez!
+
 Digite a ação:
 
 E assim o jogo continuará até que haja um vencedor ou seja declarado empate. As condições de vitória são analisadas pelo servidor à cada lance jogado.
