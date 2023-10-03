@@ -3,8 +3,8 @@
 ## Alunos:
 
  - [José Matheus Santana Alves](https://github.com/Mytheus)
- - [Lucas Heron Santos Anchieta](https://github.com/LukeHer0))
- - [Rafael Luciano Lima da Silva](https://github.com/rafaellucian0))
+ - [Lucas Heron Santos Anchieta](https://github.com/LukeHer0)
+ - [Rafael Luciano Lima da Silva](https://github.com/rafaellucian0)
 
 ## Tema
 Neste Projeto, optamos por fazer um Jogo da Velha na linguagem de programação Python, utilizando técnicas e ferramentas oriundas dos conceitos de sockets.
