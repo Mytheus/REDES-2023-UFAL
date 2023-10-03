@@ -54,7 +54,8 @@ Vez do oponente...
 Ao receber a jogada de seu oponente, o Jogador 2 receberá o tabuleiro atualizado e estará livre para realizar seu lance:
 
 AGUARDANDO OPONENTE...
-Jogo encontrado! Você é o O!
+Jogo encontrado!
+Você é o O!
 Estado do tabuleiro:
 |   | 0 | 1 | 2 |
 |---|---|---|---|
